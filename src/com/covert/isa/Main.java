@@ -20,9 +20,6 @@ public class Main {
             FileReader arq = new FileReader(nomeArq);
             BufferedReader lerArq = new BufferedReader(arq);
             String linha;
-            JOptionPane.getRootFrame();
-
-
             while (lerArq.ready()) {
                 String text = new String(lerArq.readLine().getBytes(), StandardCharsets.UTF_8);
                 System.out.println(text);
